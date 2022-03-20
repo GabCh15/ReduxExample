@@ -1,13 +1,13 @@
 export var increaseCounter = (state) => {
     return {
     type: "COUNTER_INCREASE",
-    payload: state.count,
+    payload: parseInt(state.count)+1,
   };
 };
 
 export var reduceCounter = (state) => {
   return {
     type: "COUNTER_REDUCE",
-    payload: state.count-1,
+    payload: parseInt(state.count)-1,
   };
 };
